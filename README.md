@@ -51,6 +51,7 @@ $ docker run -d containerName ( this runs containers in the background by detach
 ### Common docker commands:
 
 ```
+$ docker images                       ( shows the list of container images available on your system)
 $ docker ps                          ( shows you the list of all the running containers on your system )
 $ docker ps -a                       ( shows you the list of all the containers including the exited ) 
 $ docker pull imageName              ( pulls the docker image from the image repository )
