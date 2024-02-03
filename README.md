@@ -51,7 +51,7 @@ $ docker run -d containerName ( this runs containers in the background by detach
 ### Common docker commands:
 
 ```
-$ docker images                       ( shows the list of container images available on your system)
+$ docker images                      ( shows the list of container images available on your system)
 $ docker ps                          ( shows you the list of all the running containers on your system )
 $ docker ps -a                       ( shows you the list of all the containers including the exited ) 
 $ docker pull imageName              ( pulls the docker image from the image repository )
@@ -136,4 +136,42 @@ docker tag docker.io/sanraman/cart:v1 imageID
 ```
 1) Stopping the container means KILLING the container 
 2) Starting the container means CREATING a new container
+```
+
+
+### What are the disadvantages of running Containers on the top of a Docker Run Time ( On a linux machine )
+
+```
+    1) If you lose the Host Machine [ machine running the containers] , you would lose all the containers running on this host.
+
+    2) In case if any container is killed, someone has to to come and start the application ( There is not autoScaling concept ) 
+
+    3) If the containers in that Node experiences any resource crunch, containers goes for a restart
+
+```
+
+
+### To mitigate all of it, we use Container Orchestrator !!!!
+
+
+
+### What is a Cloud Native Product ? Kubernetes is a Cloud Native Offeringn !!!!
+
+```
+    A Product which is designed keeping cloud in mind is referred as Cloud Native.
+    But that does'nt mean that it's going work only on cloud.
+
+    All the features of the Cloud Native Product can be gained only if we are on Cloud.
+
+```
+
+
+### Kubernetes is an Open Source Container Orchestrator.
+
+```
+    1) Kubernetes can run both on Cloud and On-Prem  ( OpenSource )
+
+    2) OpenShift ( RedHat ) is a Container Orchestration Platform for On-Prem
+
+    3) On-Prem Editions For Kubernetes : Rancher, VMWare Tanzua 
 ```
